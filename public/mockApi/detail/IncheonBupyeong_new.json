@@ -1,0 +1,11 @@
+{
+    "isSuccess": true,
+    "message": "요청에 성공하였습니다.",
+    "code": 1000,
+    "results": {
+        "coord" : "EPSG:32652",
+        "pointCloudURL" : ["http://112.216.186.154:37600/E:/2023_incheon_bupyeong/pointclouds/2023_incheon_bupyeong/metadata.json"],
+        "panoramaURL" : null,
+        "shapesURL" : {"isTest": true, "url": "http://203.234.214.224:37600/shpList/D:/포트리_3DLINE_shp/","coord":"EPSG:32652"}
+    }
+}

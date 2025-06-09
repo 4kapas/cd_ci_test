@@ -1,0 +1,36 @@
+{
+  "isSuccess": true,
+  "message": "요청에 성공하였습니다.",
+  "code": 1000,
+  "results": {
+    "name": "목포 대산",
+    "coord": "EPSG:5186",
+    "pointCloudURL": [
+      "http://kict-pms.kr:37800/E:/Potree3DWebViewer/pointclouds/mockpodaesan/metadata.json"
+    ],
+    "panoramaURL": null,
+    "shapesURL": {
+      "name": "목포 대산",
+      "coord": "EPSG:5186",
+      "isMultiShp": true,
+      "shpArray": [
+        {
+          "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/mockpo/경계조정선/대산지구_경계조정선_폴리곤.shp",
+          "name": "목포대산경계조정선",
+          "objectURL": {
+            "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/mockpo/경계조정선/대산지구_경계조정선_폴리곤.dbf"
+          },
+          "visible": true
+        },
+        {
+          "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/mockpo/임야선/대산지구_토지_임야선_폴리곤.shp",
+          "name": "목포대산임야선",
+          "objectURL": {
+            "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/mockpo/임야선/대산지구_토지_임야선_폴리곤.dbf"
+          },
+          "visible": false
+        }
+      ]
+    }
+  }
+}

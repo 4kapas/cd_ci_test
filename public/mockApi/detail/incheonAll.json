@@ -1,0 +1,30 @@
+{
+    "isSuccess": true,
+    "message": "요청에 성공하였습니다.",
+    "code": 1000,
+    "results": {
+        "coord" : "EPSG:32652",
+        "pointCloudURL" : [
+            "http://dt.incheon.go.kr:37600/G:/Potree_data/20210716_choongchung_inchoen_1560_009/inchoen2021_009/metadata.json",
+            "http://dt.incheon.go.kr:37600/G:/Potree_data/20210723_inchoen_013/inchoen2021_013/metadata.json",
+            "http://dt.incheon.go.kr:37600/G:/Potree_data/20210724_inchoen_1560_014/inchoen2021_014/metadata.json",
+            "http://dt.incheon.go.kr:37600/G:/Potree_data/20210725_inchoen_1560_015/inchoen2021_015/metadata.json",
+            "http://dt.incheon.go.kr:37600/G:/Potree_data/20210727_inchoen_1560_016/inchoen2021_016/metadata.json",
+            "http://dt.incheon.go.kr:37600/G:/Potree_data/20210728_inchoen_1560_017_O/inchoen2021_017/metadata.json",
+            "http://dt.incheon.go.kr:37600/G:/Potree_data/20210728_inchoen_1560_018/inchoen2021_018/metadata.json",
+            "http://dt.incheon.go.kr:37600/G:/Potree_data/20210730_inchoen_1560_019_O/inchoen2021_019/metadata.json",
+            "http://dt.incheon.go.kr:37600/G:/Potree_data/20210805_pohang_inchoen_1560_020/inchoen2021_020/metadata.json",
+            "http://dt.incheon.go.kr:37600/G:/Potree_data/20210806_inchoen_1560_021/inchoen2021_021/metadata.json",
+            "http://dt.incheon.go.kr:37600/G:/Potree_data/20210807_inchoen_1560_023/inchoen2021_023/metadata.json",
+            "http://dt.incheon.go.kr:37600/G:/Potree_data/20210808_inchoen_1560_024/inchoen2021_024-1/metadata.json",
+            "http://dt.incheon.go.kr:37600/G:/Potree_data/20210813_inchoen_1560_024/inchoen2021_024-2/metadata.json",
+            "http://dt.incheon.go.kr:37600/G:/Potree_data/20210814_inchoen_1560_026/inchoen2021_026/metadata.json",
+            "http://dt.incheon.go.kr:37600/G:/Potree_data/20210814_inchoen_1560_027/inchoen2021_027/metadata.json"
+        ],
+        "panoramaURL" : null,
+        "shapesURL" : null
+    }
+}
+
+
+

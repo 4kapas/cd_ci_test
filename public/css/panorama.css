@@ -1,0 +1,98 @@
+	button {
+		border: 0;
+		cursor: pointer;
+		color: #fff;
+	}
+
+	.btn01 {
+		display: flex;
+		align-items: center;
+		justify-self: center;
+		background-color: #0193e5;
+		width: 44px;
+		height: 44px;
+		border-radius: 3px;
+	}
+
+	.btn01:first-child {
+		margin-left: 10px;
+	}
+
+	.btn01 img {
+		width: 100%;
+	}
+
+	.btn01.setting {
+		position: absolute;
+		right: 20px;
+		top: 13px;
+	}
+
+	#testList .Box {
+		width: 100%;
+		margin: 0;
+		padding: 5px 0;
+	}
+
+	#testList .Box .flex-mid {
+		width: 25% !important;
+	}
+
+	#testList .Box .flex-mid:nth-child(1) {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	#testList .Box:hover {
+		background-color: #25282f;
+	}
+
+	.street_map {
+		width: 350px;
+		height: 250px;
+		position: absolute;
+		top: 135px;
+		right: 0;
+		z-index: 999;
+		display:none;
+	}
+
+	#sidebar .search_wrap {
+		width: 100%;
+		display: flex;
+	}
+
+	#sidebar .search_wrap button.input {
+		outline: none;
+		color: #fff;
+		width: 100%;
+		text-align: left;
+		padding: 10px;
+		box-sizing: border-box;
+		background-color: #4E525E;
+		border: 1px solid #333;
+		border-radius: 5px;
+	}
+
+	#sidebar .search_wrap button.search_btn {
+		border: 1px solid #333;
+		background-color: #25282f;
+		color: #fff;
+		border-radius: 5px;
+		margin-left: 3px;
+		width: 75px;
+	}
+
+	#sidebar .search_wrap input[type="text"]::placeholder {
+		color: #aaa;
+	}
+
+	#sidebar .check-Box-Wrapper {
+		margin: 10px 0;
+		width: 100%;
+	}
+
+	#sidebar label {
+		text-align: center;
+	}

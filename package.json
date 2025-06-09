@@ -1,0 +1,135 @@
+{
+  "name": "potree_setup",
+  "private": true,
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "public/electron.js",
+  "homepage": ".",
+  "description": "Your app description",
+  "author": "Your name",
+  "build": {
+    "appId": "com.my-website.my-app",
+    "productName": "MyApp",
+    "copyright": "Copyright © 2019 ${author}",
+    "directories": {
+      "buildResources": "assets",
+      "output": "dist_electron"
+    },
+    "extraMetadata": {
+      "main": "public/electron.js"
+    },
+    "files": [
+      "dist/**/*",
+      "public/electron.js",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "assets/icons"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "gbuild": "gulp build pack",
+    "electron": "electron .",
+    "electron:pack": "electron-builder --dir",
+    "electron:dev": "concurrently -k \"cross-env BROWSER=none yarn dev\" \"yarn electron\"",
+    "electron:builder": "electron-builder",
+    "build:for:electron": "tsc --noEmit && cross-env ELECTRON=true vite build",
+    "app:build": "yarn build:for:electron && yarn electron:builder",
+    "start": "npm run gbuild && npm run dev"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.7",
+    "@mui/x-data-grid": "^7.28.3",
+    "@mui/x-date-pickers": "^6.13.0",
+    "@ngageoint/geopackage": "^4.2.5",
+    "@types/html2canvas": "^1.0.0",
+    "axios": "^1.5.0",
+    "better-sqlite3": "^11.1.2",
+    "bootstrap": "^5.2.3",
+    "circular-json": "^0.5.9",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dayjs": "^1.11.10",
+    "density-clustering": "^1.3.0",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.9",
+    "electron-is-dev": "^3.0.1",
+    "exceljs": "^4.4.0",
+    "express": "^4.18.2",
+    "file-saver": "^2.0.5",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-env": "^0.4.0",
+    "html2canvas": "^1.4.1",
+    "icp-js": "^1.2.2",
+    "icpts": "^0.6.0",
+    "js-cookie": "^3.0.5",
+    "jwt-decode": "^4.0.0",
+    "kd-tree-javascript": "^1.0.3",
+    "lru-cache": "^10.2.0",
+    "lzma-native": "^8.0.6",
+    "prebuild-install": "^7.1.2",
+    "proj4": "^2.15.0",
+    "qs": "^6.11.2",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-datepicker": "^4.17.0",
+    "react-dom": "^18.2.0",
+    "react-error-overlay": "^6.0.11",
+    "react-material-ui-carousel": "^3.4.2",
+    "react-overlays": "^5.2.1",
+    "react-query": "^3.39.3",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "^4.0.3",
+    "react-slider": "^2.0.6",
+    "react-toastify": "^9.1.2",
+    "socket.io-client": "^4.8.1",
+    "styled-components": "^6.0.7",
+    "three": "^0.156.1",
+    "tiff-imagery-provider": "^2.10.5",
+    "uuid": "^11.1.0",
+    "xlsx": "^0.18.5",
+    "zustand": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.7",
+    "@types/kd-tree-javascript": "^1.0.3",
+    "@types/node": "^20.11.0",
+    "@types/qs": "^6.9.11",
+    "@types/react": "^18.0.28",
+    "@types/react-copy-to-clipboard": "^5.0.7",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "concurrently": "^8.2.2",
+    "electron": "^31.2.0",
+    "electron-builder": "^24.13.3",
+    "gulp": "^4.0.2",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0",
+    "vite-plugin-html": "^3.2.0",
+    "wait-on": "^7.2.0"
+  }
+}

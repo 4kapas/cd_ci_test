@@ -1,0 +1,184 @@
+{
+	"result": [
+		{
+			"address" : "경기",
+			"status" : "정상",
+			"class" : "기타",
+			"object_code" : "CH3-4",
+			"imgPath" : "../resources/dorosee/etc.png",
+			"center" : {
+				"x":500470.742,
+				"y":3896421.863,
+				"z":0
+			},
+			"rotation" : 30,
+			"dimension" : {
+			"width" : 1.68,
+			"length" : 1.52,
+			"height" : 2.08
+			}
+		},
+		{
+			"address" : "경기",
+			"status" : "주의",
+			"class" : "가로등",
+			"object_code" : "CH3-5",
+			"imgPath" : "../resources/dorosee/he.png",
+			"center" : {
+				"x":500389.052,
+				"y":3896691.820,
+				"z":5
+			},
+			"rotation" : 50,
+			"dimension" : {
+			"width" : 4.5,
+			"length" : 4.5,
+			"height" : 7
+			}
+		},
+		{
+			"address" : "경기",
+			"status" : "정상",
+			"class" : "신호등",
+			"object_code" : "CH3-6",
+			"imgPath" : "../resources/dorosee/rgb.png",
+			"center" : {
+				"x":500461.832,
+				"y":3896450.150,
+				"z":2
+			},
+			"rotation" : 70,
+			"dimension" : {
+			"width" : 1.67,
+			"length" : 1.67,
+			"height" : 4.2
+			}
+		},
+		{
+			"address" : "경기",
+			"status" : "경계",
+			"class" : "신호등",
+			"object_code" : "CH3-6",
+			"imgPath" : "../resources/dorosee/rgb.png",
+			"center" : {
+				"x":500461.832,
+				"y":3896450.150,
+				"z":2
+			},
+			"rotation" : 70,
+			"dimension" : {
+			"width" : 1.67,
+			"length" : 1.67,
+			"height" : 4.2
+			}
+		},
+		{
+			"address" : "경기",
+			"status" : "경계",
+			"class" : "표지판",
+			"object_code" : "CH3-6",
+			"imgPath" : "../resources/dorosee/trafficSign.jpg",
+			"center" : {
+				"x":500441.392,
+				"y":3896513.981,
+				"z":3.769
+			},
+			"rotation" : 70,
+			"dimension" : {
+			"width" : 1.17,
+			"length" : 1.71,
+			"height" : 2.08
+			}
+		},
+		{
+			"address" : "경기",
+			"status" : "주의",
+			"class" : "기타",
+			"object_code" : "CH3-6",
+			"imgPath" : "../resources/dorosee/etc.png",
+			"center" : {
+				"x":500415.012,
+				"y":3896526.267,
+				"z":3.633
+			},
+			"rotation" : 70,
+			"dimension" : {
+			"width" : 2.23,
+			"length" : 3.33,
+			"height" : 8.96
+			}
+		},
+		{
+			"address" : "경기",
+			"status" : "주의",
+			"class" : "신호등",
+			"object_code" : "CH3-6",
+			"imgPath" : "../resources/dorosee/rgb.png",
+			"center" : {
+				"x":500458.532,
+				"y":3896462.660,
+				"z":4.525
+			},
+			"rotation" : 70,
+			"dimension" : {
+			"width" : 2.10,
+			"length" : 2.10,
+			"height" : 8.75
+			}
+		},
+		{
+			"address" : "경기",
+			"status" : "주의",
+			"class" : "가로등",
+			"object_code" : "CH3-6",
+			"imgPath" : "../resources/dorosee/he.png",
+			"center" : {
+				"x":500448.138,
+				"y":3896420.580,
+				"z":4.041
+			},
+			"rotation" : 70,
+			"dimension" : {
+			"width" : 2.72,
+			"length" : 2.72,
+			"height" : 8.16
+			}
+		},
+		{
+			"address" : "경기",
+			"status" : "주의",
+			"class" : "기타",
+			"object_code" : "CH3-6",
+			"imgPath" : "../resources/dorosee/etc.png",
+			"center" : {
+				"x":500422.212,
+				"y":3896506.700,
+				"z":3.341
+			},
+			"rotation" : 70,
+			"dimension" : {
+			"width" : 1.83,
+			"length" : 1.83,
+			"height" : 4.76
+			}
+		},
+		{
+			"address" : "경기",
+			"status" : "주의",
+			"class" : "기타",
+			"object_code" : "CH3-6",
+			"imgPath" : "../resources/dorosee/etc.png",
+			"center" : {
+				"x":500429.062,
+				"y":3896487.671,
+				"z":2.168
+			},
+			"rotation" : 70,
+			"dimension" : {
+			"width" : 5.35,
+			"length" : 3.29,
+			"height" : 3.29
+			}
+		}
+	]
+}

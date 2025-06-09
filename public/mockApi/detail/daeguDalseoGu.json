@@ -1,0 +1,36 @@
+{
+  "isSuccess": true,
+  "message": "요청에 성공하였습니다.",
+  "code": 1000,
+  "results": {
+    "name": "대구 달서",
+    "coord": "EPSG:5187",
+    "pointCloudURL": [
+      "http://kict-pms.kr:37800/E:/Potree3DWebViewer/daegu/dalseo/pointclouds/metadata.json"
+    ],
+    "panoramaURL": null,
+    "shapesURL": {
+      "name": "대구 달서",
+      "coord": "EPSG:5187",
+      "isMultiShp": true,
+      "shpArray": [
+        {
+          "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/daegu/dalseogu/경계조정선/달서구 장기1지구_경계조정선_폴리곤.shp",
+          "name": "대구달서경계조정선",
+          "objectURL": {
+            "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/daegu/dalseogu/경계조정선/달서구 장기1지구_경계조정선_폴리곤.dbf"
+          },
+          "visible": true
+        },
+        {
+          "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/daegu/dalseogu/임야선/달서구_장기1지구_토지_임야선_폴리곤.shp",
+          "name": "대구달서임야선",
+          "objectURL": {
+            "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/daegu/dalseogu/임야선/달서구_장기1지구_토지_임야선_폴리곤.dbf"
+          },
+          "visible": false
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Potree Viewer</title>
+
+  <link rel="stylesheet" type="text/css" href="./libs/potree/potree.css">
+  <link rel="stylesheet" type="text/css" href="./libs/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" type="text/css" href="./libs/openlayers3/ol.css">
+  <link rel="stylesheet" type="text/css" href="./libs/spectrum/spectrum.css">
+  <link rel="stylesheet" type="text/css" href="./libs/jstree/themes/mixed/style.css">
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="potree_render_area" style="width: 100%; height: 100%; background: transparent;"></div>
+
+  <script src="./libs/three.js/build/three.min.js"></script>
+  <script src="./libs/jquery/jquery-3.1.1.min.js"></script>
+  <script src="./libs/jquery-ui/jquery-ui.min.js"></script>
+  <script src="./libs/spectrum/spectrum.js"></script>
+  <script src="./libs/other/BinaryHeap.js"></script>
+  <script src="./libs/tween/tween.min.js"></script>
+  <script src="./libs/d3/d3.js"></script>
+  <script src="./libs/proj4/proj4.js"></script>
+  <script src="./libs/openlayers3/ol.js"></script>
+  <script src="./libs/i18next/i18next.js"></script>
+  <script src="./libs/jstree/jstree.js"></script>
+  <script src="./libs/plasio/js/laslaz.js"></script>
+  <script src="./libs/potree/potree.js"></script>
+
+  <script type="module">
+    const viewer = new Potree.Viewer(document.getElementById("potree_render_area"));
+    window.viewer = viewer;
+
+    viewer.useHQ = true;
+    viewer.setEDLEnabled(true);
+    viewer.setEDLRadius(1.0);
+    viewer.setEDLStrength(1);
+    viewer.setFOV(60);
+    viewer.setPointBudget(20000000);
+    viewer.setMinNodeSize(0);
+    viewer.loadSettingsFromURL();
+    viewer.setBackground("none");
+
+    viewer.loadGUI(() => {
+      viewer.setLanguage('en');
+      $("#menu_appearance").next().show();
+      $("#menu_tools").next().show();
+      $("#menu_clipping").next().show();
+      viewer.toggleSidebar();
+    });
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const serviceId = urlParams.get('serviceId');
+    const detectMode = urlParams.get('detectMode');
+    const host = urlParams.get('host');
+    const centerX = Number(urlParams.get('centerX'));
+    const centerY = Number(urlParams.get('centerY'));
+    const centerZ = Number(urlParams.get('centerZ'));
+    const isDetectMode = detectMode?.toLowerCase() === 'true';
+
+    const serviceUrl = `${host}/services/${serviceId}`;
+
+    if (serviceId) {
+      Potree.loadPointCloud(`${serviceUrl}/pointcloud/metadata.json`, "pointcloud", e => {
+        try {
+          const pointcloud = e.pointcloud;
+          const material = pointcloud.material;
+          const scene = viewer.scene;
+
+          material.pointSizeType = Potree.PointSizeType.FIXED;
+          scene.addPointCloud(pointcloud);
+
+          const boundingBoxSize = pointcloud.boundingBox.getSize(new THREE.Vector3());
+          const sceneSize = Math.max(boundingBoxSize.x, boundingBoxSize.y, boundingBoxSize.z);
+
+          const cameraDistance = sceneSize / 1.2;
+
+          const boundingBoxCenter = pointcloud.boundingBox.getCenter(new THREE.Vector3());
+          const pointCenter = new THREE.Vector3(
+            pointcloud.position.x + pointcloud.boundingBox.max.x / 2,
+            pointcloud.position.y + pointcloud.boundingBox.max.y / 2,
+            pointcloud.position.z
+          );
+          scene.view.position.set(
+            centerX + cameraDistance / 2,
+            centerY - cameraDistance / 2,
+            centerZ + cameraDistance / 2
+          );
+          scene.view.lookAt(pointCenter);
+          if (isDetectMode) {
+            viewer.setClassifications({
+              20: {
+                visible: true,
+                name: "changed",
+                color: [1.0, 0.1, 0.1, 1.0],
+              },
+            });
+            material.activeAttributeName = "classification";
+          }
+        } catch (error) {
+          console.error("[ERROR] 포인트클라우드 처리 중 오류:", error);
+        }
+      });
+    } else {
+      console.error("[ERROR] serviceId 파라미터가 없습니다.");
+    }
+  </script>
+</body>
+
+</html>

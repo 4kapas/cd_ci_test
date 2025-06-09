@@ -1,0 +1,24 @@
+{
+  "isSuccess": true,
+  "message": "요청에 성공하였습니다.",
+  "code": 1000,
+  "results": {
+    "coord": "EPSG:5186",
+    "pointCloudURL": [
+      "http://kict-pms.kr:37800/E:/Potree3DWebViewer/kwanggu/pointclouds/metadata.json"
+    ],
+    "panoramaURL": null,
+    "shapesURL": {
+      "isMultiShp": false,
+      "name": "동명뉴딜지구",
+      "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/kwanggu/임야선/동명뉴딜지구_정리후_지적도_토지-임야선_폴리곤.shp"
+    },
+    "objectURL": {
+      "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/kwanggu/임야선/동명뉴딜지구_정리후_지적도_토지-임야선_폴리곤.dbf"
+    },
+    "threedObjectURL": {
+      "OBJPath": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/3d/pyeongdong/obj/GJ_LOD1_3D_0517_5186.obj",
+      "MTLPath": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/3d/pyeongdong/obj/materials.mtl"
+    }
+  }
+}

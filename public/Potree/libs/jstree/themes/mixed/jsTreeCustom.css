@@ -1,0 +1,303 @@
+/* jsTree Custom CSS */
+.floatingContainer {
+  background: #ffffff;
+  border: 1px solid #dfe2e7;
+  overflow-y: auto;
+  /* height: calc(100% - 157px); */
+  padding-bottom: 24px;
+}
+.floatingContainer .floatingHeader {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  border-bottom: 1px solid #dfe2e7;
+  box-sizing: border-box;
+  position: sticky;
+  background: #fff;
+  top: 0;
+  z-index: 999;
+}
+.floatingContainer .floatingHeader button {
+  position: relative;
+}
+.floatingContainer .floatingHeader p {
+  margin: 0;
+  color: #2f3237;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+}
+.floatingContainer .pv-menu-list {
+  /* height: 100%; */
+  margin: 0;
+  padding: 18px 0 0px;
+  overflow: hidden auto;
+}
+
+.floatingContainer .pv-menu-list > li > .ui-slider {
+  background-color: none !important;
+  background: linear-gradient(90deg, #36d6cb 54%, #02bb9f 100%);
+  border: none !important;
+}
+
+.scene-container {
+  position: fixed;
+  top: 103px !important;
+  left: 19px;
+  display: none;
+  width: 256px;
+  /* max-height: 60vh; */
+  height: calc(100% - 157px);
+}
+.scene-container .pv-menu-list {
+  padding: 0px 16px 0px;
+}
+
+#menu_scene {
+  /*margin:0;*/
+  /*font-size:0;*/
+}
+/* js tree 실제트리 텍스트 커스텀 */
+/* 트리 이미지는 jstree/themes/mixed/style.css 직접 커스텀 */
+.jstree-default .jstree-anchor {
+  height: 20px;
+  line-height: 20px;
+  margin-top: -4px;
+  padding: 0;
+  margin-right: 0;
+  vertical-align: middle;
+  /* 23/09/12 01:41 양태현 임시 color 주석 */
+  /* color:#344054; */
+  font-size: 15px;
+  font-weight: 400;
+  color: #444951;
+}
+.jstree-default .jstree-anchor b {
+  vertical-align: middle;
+  color: #2f3237;
+  font-size: 16px;
+  font-family: Pretendard;
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
+}
+.jstree-default .jstree-hovered {
+  background-color: #ebeef1 !important;
+}
+.jstree-children .jstree-last .jstree-ocl {
+  /*background-position:-71px -4px;*/
+}
+
+.jstree-default .jstree-open.jstree-last {
+  background-position: center center;
+}
+
+/*설정 플로팅창 체크박스*/
+.customCheckbox input[type="checkbox"] {
+  display: none;
+}
+.customCheckbox span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  cursor: pointer;
+}
+.customCheckbox .check {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+  background-image: url(icon_tree_check_off.svg);
+  background-size: 14px 14px;
+}
+.customCheckbox input[type="checkbox"]:checked + .check {
+  background-image: url(icon_tree_check_on.svg);
+}
+/*설정 플로팅창 볼륨 커스텀*/
+.commonGroup {
+  background: #ffffff;
+}
+.commonGroup legend {
+  display: none;
+}
+.commonGroup label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+  padding: 4px 8px !important;
+  border-left: 1px solid #dfe2e7 !important;
+  border-top: 1px solid #dfe2e7 !important;
+  border-right: 1px solid #dfe2e7 !important;
+  border-bottom: 1px solid #dfe2e7 !important;
+  color: #98a2b3;
+  font-size: 12px;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+.commonGroup label:hover {
+  color: inherit;
+}
+.commonGroup label.ui-state-active {
+  background-color: #00a991 !important;
+  border-left: 1px solid #00a991 !important;
+  border-top: 1px solid #00a991 !important;
+  border-right: 1px solid #00a991 !important;
+  border-bottom: 1px solid #00a991 !important;
+
+  color: #ffffff !important;
+}
+.commonGroup .ui-state-default {
+  background: #ffffff !important;
+  box-shadow: none;
+}
+
+.ui-state-default {
+  background: #ffffff !important;
+}
+
+.ui-slider-handle {
+  border: none !important;
+  width: 18px !important;
+  height: 18px !important;
+  border-radius: 50%;
+  box-shadow: 0 0 2px #00000040;
+}
+
+/* 설정 플로팅창 배경설정 */
+.commonGroup.settingBg label {
+  border-right: none !important;
+}
+.commonGroup.settingBg span span:first-of-type label {
+  border-radius: 2px 0px 0px 2px !important;
+}
+.commonGroup.settingBg span span:last-of-type label {
+  border-right: 1px solid #dfe2e7 !important;
+  border-radius: 0px 2px 2px 0px !important;
+}
+/*설정 플로팅창 품질*/
+.commonGroup.settingQuality label {
+  padding: 4px 24px !important;
+  margin: 0 8px 0 0 !important;
+  border-radius: 2px !important;
+  /* width: 88px !important; */
+  height: 30px;
+  font-size: 12px;
+  /* color: #ffffff; */
+  font-weight: 400;
+}
+.commonGroup.settingQuality label:last-child {
+  margin: 0 !important;
+}
+.settingQuality {
+  width: 100%;
+}
+.settingQualityButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 3.11px;
+  background-color: #ffffff;
+  border: 1.56px solid #dfe2e7;
+  box-sizing: border-box;
+}
+.settingQualityButton img {
+  width: 16.62px;
+  height: 18.6px;
+}
+.settingQualityButton:last-of-type {
+  margin-left: 4px;
+}
+/* 검색구간 플로팅창 */
+.propInfo-container .body {
+  padding: 16px 10px;
+}
+/* 화면캡쳐 플로팅창 */
+/* 화면 정중앙 위치 */
+.centeredFloating {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  display: none;
+  width: 334px;
+  transform: translate(-50%, -50%);
+  border: 1px solid #eaecf0;
+  background-color: #ffffff;
+}
+.centeredFloating .header {
+  height: 34px;
+  padding: 8px 10px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  border-bottom: 1px solid #eaecf0;
+  box-sizing: border-box;
+}
+.centeredFloating .body {
+  padding: 16px 10px;
+}
+.centeredFloating .body .img {
+  border: 1px solid #eaecf0;
+  box-sizing: border-box;
+}
+.centeredFloating .body .img,
+.centeredFloating .body img {
+  width: 100%;
+}
+.centeredFloating .footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.centeredFloating .footer button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 53px;
+  height: 24px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 2px;
+  border: 1px solid #00a991;
+  box-sizing: border-box;
+}
+.centeredFloating .footer button.cancel {
+  color: #00a991;
+  background-color: #ffffff;
+}
+.centeredFloating .footer button.save {
+  color: #ffffff;
+  background-color: #00a991;
+}
+/* 업무연계 페이지 */
+.workLinkageContainer {
+  position: fixed;
+  top: 32px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: calc(100vh - 32px);
+  padding: 24px;
+  background-color: #ffffff;
+}
+/* 업무연계 게시판 상세페이지 */
+.tableDetail {
+  padding: 24px;
+  border: 1px solid #eaecf0;
+  background: #f9fafb;
+}
+
+/* 레이어 메뉴 */
+
+.jstree.jstree-2 {
+  display: none;
+}
+
+.cesium-widget-credits {
+  display: none !important;
+}

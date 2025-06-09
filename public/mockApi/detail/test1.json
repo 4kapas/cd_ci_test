@@ -1,0 +1,15 @@
+{
+  "isSuccess": true,
+  "message": "요청에 성공하였습니다.",
+  "code": 1000,
+  "results": {
+    "name": "테스트1",
+    "coord": "EPSG:5186",
+    "pointCloudURL": [
+      "http://kict-pms.kr:37800/E:/LX변화탐지/테스트1/metadata.json",
+      "http://kict-pms.kr:37800/E:/LX변화탐지/테스트2/metadata.json"
+    ],
+    "panoramaURL": null,
+    "shapesURL": null
+  }
+}

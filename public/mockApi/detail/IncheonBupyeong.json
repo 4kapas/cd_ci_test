@@ -1,0 +1,21 @@
+{
+  "isSuccess": true,
+  "message": "요청에 성공하였습니다.",
+  "code": 1000,
+  "results": {
+    "coord": "EPSG:5186",
+    "pointCloudURL": [
+      "http://203.234.214.224/g:/export_test/test/output/pointclouds/inchon01/metadata.json"
+    ],
+    "panoramaURL": null,
+    "shapesURL": {
+      "coord": "EPSG:32652",
+      "isTest": false,
+      "name": "귤현1지구",
+      "url": "http://203.234.214.224/G:/export_test/test/output/shp/귤현1지구_지적도_DEM.shp"
+    },
+    "objectURL": {
+      "url": "http://203.234.214.224/G:/export_test/test/output/shp/귤현1지구_지적도_DEM.dbf"
+    }
+  }
+}

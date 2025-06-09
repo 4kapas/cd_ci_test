@@ -1,0 +1,35 @@
+{
+  "isSuccess": true,
+  "message": "요청에 성공하였습니다.",
+  "code": 1000,
+  "results": {
+    "name": "고흥 오천",
+    "coord": "EPSG:5186",
+    "pointCloudURL": [
+      "http://kict-pms.kr:37800/E:/Potree3DWebViewer/goheung/goheung-ocheon/pointclouds/metadata.json"
+    ],
+    "panoramaURL": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/goheung/panorama/고흥coord추가ver/오천_1지구/Ocheonri_Panorama",
+    "shapesURL": {
+      "name": "고흥 오천",
+      "isMultiShp": true,
+      "shpArray": [
+        {
+          "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/goheung/ocheon/경계조정선/testa.shp",
+          "name": "오천경계조정선",
+          "objectURL": {
+            "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/goheung/ocheon/경계조정선/testa.dbf"
+          },
+          "visible": true
+        },
+        {
+          "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/goheung/ocheon/임야선/3D_금산_오천_TM.shp",
+          "name": "오천토지임야선",
+          "objectURL": {
+            "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/goheung/ocheon/임야선/3D_금산_오천_TM.dbf"
+          },
+          "visible": false
+        }
+      ]
+    }
+  }
+}

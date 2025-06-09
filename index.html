@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+  <link rel="stylesheet" href="/node_modules/react-toastify/dist/ReactToastify.css" />
+
+  <link rel="stylesheet" type="text/css" href="/build/potree/potree.css" />
+  <link rel="stylesheet" type="text/css" href="/Potree/libs/jquery-ui/jquery-ui.min.css" />
+  <link rel="stylesheet" type="text/css" href="/Potree/libs/openlayers3/ol.css" />
+  <link rel="stylesheet" type="text/css" href="/Potree/libs/spectrum/spectrum.css" />
+  <link rel="stylesheet" type="text/css" href="/Potree/libs/jstree/themes/mixed/style.css" />
+  <!-- jsTree Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="/Potree/libs/jstree/themes/mixed/jsTreeCustom.css" />
+  <link rel="stylesheet" type="text/css" href="/Potree/libs/Cesium/Widgets/CesiumWidget/CesiumWidget.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+  <script>
+    HTMLCanvasElement.prototype.getContext = function (origFn) {
+      return function (type, attribs) {
+        attribs = attribs || {};
+        attribs.preserveDrawingBuffer = true;
+        return origFn.call(this, type, attribs);
+      };
+    }(HTMLCanvasElement.prototype.getContext);
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="/Potree/libs/three.js/build/three.js"></script>
+  <script src="/Potree/libs/html2canvas.js"></script>
+  <!-- <script src="/Potree/libs/jquery/jquery-3.1.1.min.js" defer></script> -->
+  <script src="/Potree/libs/spectrum/spectrum.js" defer></script>
+  <script src="/Potree/libs/jquery-ui/jquery-ui.min.js" defer></script>
+  <script src="/Potree/libs/other/BinaryHeap.js" defer></script>
+  <script src="/Potree/libs/tween/tween.min.js" defer></script>
+  <script src="/Potree/libs/d3/d3.js" defer></script>
+  <script src="/Potree/libs/proj4/proj4.js" defer></script>
+  <script src="/Potree/libs/openlayers3/ol.js" defer></script>
+  <script src="/Potree/libs/i18next/i18next.js" defer></script>
+  <script src="/Potree/libs/jstree/jstree.js" defer></script>
+
+  <script src="/build/potree/potree.js" defer></script>
+
+  <script src="/Potree/libs/plasio/js/laslaz.js" defer></script>
+  <script src="/Potree/libs/Cesium/Cesium.js" defer></script>
+  <script src="/Potree/libs/shapefile/shapefile.js" defer></script>
+
+  <!-- Dorosee -->
+  <link rel="stylesheet" type="text/css" href="/css/dorosee.css" />
+  <link rel="stylesheet" type="text/css" href="/css/panorama.css" />
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/common.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  <!-- <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1RdsTRtlXOzAu3tm5Kg09h3Vd65fIGGk&callback=initialize&v=weekly"
+      ></script> -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1RdsTRtlXOzAu3tm5Kg09h3Vd65fIGGk&v=weekly"></script>
+  <!-- <script type="text/javascript"
+      src="http://map.vworld.kr/js/webglMapInit.js.do?version=2.0&apiKey=43542827-D170-3C40-8483-2BD5651B2690"></script> -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>변화탐지 시스템</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

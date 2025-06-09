@@ -1,0 +1,22 @@
+{
+  "isSuccess": true,
+  "message": "요청에 성공하였습니다.",
+  "code": 1000,
+  "results": {
+    "name": "제주",
+    "coord": "EPSG:32652",
+    "pointCloudURL": [
+      "http://203.234.214.224/D:/convertTolas6/pointclouds/jeju/metadata.json"
+    ],
+    "panoramaURL": null,
+    "shapesURL": {
+      "coord": "EPSG:5175",
+      "name": "제주",
+      "isTest": false,
+      "url": "http://203.234.214.224/D:/Potree3DWebViewer/shapes/jeju/jeju.shp"
+    },
+    "objectURL": {
+      "url": "http://203.234.214.224/D:/Potree3DWebViewer/shapes/jeju/jeju.dbf"
+    }
+  }
+}

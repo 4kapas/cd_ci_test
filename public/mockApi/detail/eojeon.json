@@ -1,0 +1,35 @@
+{
+  "isSuccess": true,
+  "message": "요청에 성공하였습니다.",
+  "code": 1000,
+  "results": {
+    "name": "고흥 어전",
+    "coord": "EPSG:32652",
+    "pointCloudURL": [
+      "http://kict-pms.kr:37800/E:/Potree3DWebViewer/goheung/goheung-geumsan-eojeon/pointclouds/goheung-geumsan-eojeon/metadata.json"
+    ],
+    "panoramaURL": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/goheung/panorama/고흥coord추가ver/어전_1지구/Eojeonri_Panorama",
+    "shapesURL": {
+      "name": "고흥 어전",
+      "isMultiShp": true,
+      "shpArray": [
+        {
+          "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/goheung/eojeon/경계조정선/3D_금산어전_TM_경계조정선_폴리곤.shp",
+          "name": "어전경계조정선",
+          "objectURL": {
+            "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/goheung/eojeon/경계조정선/3D_금산어전_TM_경계조정선_폴리곤.dbf"
+          },
+          "visible": true
+        },
+        {
+          "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/goheung/eojeon/임야선/금산어전_TM_3D.shp",
+          "name": "어전토지임야선",
+          "objectURL": {
+            "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/goheung/eojeon/임야선/금산어전_TM_3D.dbf"
+          },
+          "visible": false
+        }
+      ]
+    }
+  }
+}

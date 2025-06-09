@@ -1,0 +1,58 @@
+{
+  "categoryList": [
+    { "key": "forest", "name": "산림변화탐지" },
+    { "key": "test", "name": "테스트" },
+    { "key": "seoul", "name": "서울지역본부" },
+    { "key": "busan_ulsan", "name": "부산울산지역본부" },
+    { "key": "incheon", "name": "인천지역본부" },
+    { "key": "gyeonggi_south", "name": "경기남부지역본부" },
+    { "key": "gyeonggi_north", "name": "경기북부지역본부" },
+    { "key": "gangwon", "name": "강원지역본부" },
+    { "key": "chungbuk", "name": "충북지역본부" },
+    { "key": "daejeon_sejong_chungnam", "name": "대전세종충남지역본부" },
+    { "key": "jeonbuk", "name": "전북지역본부" },
+    { "key": "gwangju_jeonnam", "name": "광주전남지역본부" },
+    { "key": "daegu_gyeongbuk", "name": "대구경북지역본부" },
+    { "key": "gyeongnam", "name": "경남지역본부" },
+    { "key": "jeju", "name": "제주지역본부" },
+    { "key": "pilot_zone", "name": "시범사업지구" }
+  ],
+  "serviceList": [
+    {
+      "key": "forest-220130",
+      "name": "220130 산림변화탐지",
+      "category": "forest",
+      "description": ""
+    },
+    {
+      "key": "forest-230604",
+      "name": "230604 산림변화탐지",
+      "category": "forest",
+      "description": ""
+    },
+    {
+      "key": "jeju-336101479",
+      "name": "336101479 제주",
+      "category": "jeju",
+      "description": ""
+    },
+    {
+      "key": "jeju-336111186",
+      "name": "336111186 제주",
+      "category": "jeju",
+      "description": ""
+    },
+    {
+      "key": "test1",
+      "name": "테스트1",
+      "category": "test",
+      "description": ""
+    },
+    {
+      "key": "test2",
+      "name": "테스트2",
+      "category": "test",
+      "description": ""
+    }
+  ]
+}

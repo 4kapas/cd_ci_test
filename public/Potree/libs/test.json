@@ -1,0 +1,238 @@
+{
+	"result": [
+		{
+			"address" : "광주",
+			"status" : "정상",
+			"class" : "가로등",
+			"object_code" : "CH3-4",
+			"imgPath" : "../resources/dorosee/he.png",
+			"center" : {
+				"x":296729.92,
+				"y":3888374.90,
+				"z":5.11
+			},
+			"rotation" : 30,
+			"dimension" : {
+			"width" : 5,
+			"length" : 10,
+			"height" : 10
+			}
+		},
+		{
+			"address" : "광주",
+			"status" : "주의",
+			"class" : "가로등",
+			"object_code" : "CH3-5",
+			"imgPath" : "../resources/dorosee/he.png",
+			"center" : {
+				"x":296740.71,
+				"y":3888357.53,
+				"z":5.11
+			},
+			"rotation" : 50,
+			"dimension" : {
+			"width" : 5,
+			"length" : 10,
+			"height" : 10
+			}
+		},
+		{
+			"address" : "서울",
+			"status" : "경계",
+			"class" : "가로등",
+			"object_code" : "CH3-6",
+			"imgPath" : "../resources/dorosee/he.png",
+			"center" : {
+				"x":296763.70,
+				"y":3888333.37,
+				"z":5.11
+			},
+			"rotation" : 70,
+			"dimension" : {
+			"width" : 5,
+			"length" : 10,
+			"height" : 10
+			}
+		},
+		{
+			"address" : "광주",
+			"status" : "심각",
+			"class" : "기타",
+			"object_code" : "CH3-7",
+			"imgPath" : "../resources/dorosee/etc.png",
+			"center" : {
+				"x":296786.61,
+				"y":3888305.79,
+				"z":5.11
+			},
+			"rotation" : 0,
+			"dimension" : {
+			"width" : 5,
+			"length" : 10,
+			"height" : 10
+			}
+		},
+		{
+			"address" : "광주",
+			"status" : "심각",
+			"class" : "기타",
+			"object_code" : "CH3-7",
+			"imgPath" : "../resources/dorosee/etc.png",
+			"center" : {
+				"x":296674.092,
+				"y":3888471.786,
+				"z":5
+			},
+			"rotation" : 0,
+			"dimension" : {
+			"width" : 6,
+			"length" : 6,
+			"height" : 10
+			}
+		},
+		{
+			"address" : "광주",
+			"status" : "심각",
+			"class" : "기타",
+			"object_code" : "CH3-7",
+			"imgPath" : "../resources/dorosee/etc.png",
+			"center" : {
+				"x":296958.368,
+				"y":3888244.439,
+				"z":5
+			},
+			"rotation" : 0,
+			"dimension" : {
+			"width" : 5.6,
+			"length" : 5.6,
+			"height" : 8.87
+			}
+		},
+		{
+			"address" : "광주",
+			"status" : "심각",
+			"class" : "신호등",
+			"object_code" : "CH3-7",
+			"imgPath" : "../resources/dorosee/rgb.png",
+			"center" : {
+				"x":297100.055,
+				"y":3888327.671,
+				"z": 2
+			},
+			"rotation" : 0,
+			"dimension" : {
+			"width" : 3,
+			"length" : 3,
+			"height" : 4
+			}
+		},
+		{
+			"address" : "광주",
+			"status" : "정상",
+			"class" : "가로등",
+			"object_code" : "CH3-7",
+			"imgPath" : "../resources/dorosee/he.png",
+			"center" : {
+				"x":297100.055,
+				"y":3888315.250,
+				"z":5
+			},
+			"rotation" : 0,
+			"dimension" : {
+			"width" : 3.71,
+			"length" : 3.71,
+			"height" : 9.60
+			}
+		},
+		{
+			"address" : "광주",
+			"status" : "정상",
+			"class" : "신호등",
+			"object_code" : "CH3-7",
+			"imgPath" : "../resources/dorosee/rgb.png",
+			"center" : {
+				"x":297095.014,
+				"y":3888352.236,
+				"z":3
+			},
+			"rotation" : 0,
+			"dimension" : {
+			"width" : 2.24,
+			"length" : 2.07,
+			"height" : 5.63
+			}
+		},
+		{
+			"address" : "광주",
+			"status" : "주의",
+			"class" : "표지판",
+			"object_code" : "CH3-7",
+			"imgPath" : "../resources/dorosee/trafficSign.jpg",
+			"center" : {
+				"x":297261.773,
+				"y":3888461.852,
+				"z":5.2
+			},
+			"rotation" : 0,
+			"dimension" : {
+			"width" : 2.45,
+			"length" : 2.78,
+			"height" : 1.54
+			}
+		},
+		{
+			"address" : "광주",
+			"status" : "주의",
+			"class" : "표지판",
+			"object_code" : "CH3-7",
+			"imgPath" : "../resources/dorosee/trafficSign.jpg",
+			"center" : {
+				"x":297122,
+				"y":3888662,
+				"z":5.5
+			},
+			"rotation" : 0,
+			"dimension" : {
+			"width" : 1.30,
+			"length" : 1.12,
+			"height" : 1.59
+			}
+		},
+		{
+			"address" : "광주",
+			"status" : "주의",
+			"class" : "표지판",
+			"object_code" : "CH3-7",
+			"imgPath" : "../resources/dorosee/trafficSign.jpg",
+			"center" : {
+				"x":297091,
+				"y":3888676,
+				"z":2
+			},
+			"rotation" : 0,
+			"dimension" : {
+			"width" : 3.13,
+			"length" : 2.30,
+			"height" : 4.60
+			}
+		},
+		{
+			"address" : "광주",
+			"status" : "주의",
+			"class" : "표지판",
+			"object_code" : "CH3-7",
+			"imgPath" : "../resources/dorosee/trafficSign.jpg",
+			"center" : {
+				"x":297072.028,
+				"y":3888701.512,
+				"z":2
+			},
+			"rotation" : 0,
+			"dimension" : {
+			"width" : 3.74,
+			"length" : 3.03,
+			"height" : 5.15
+			}
+		}
+	]
+}

@@ -1,0 +1,28 @@
+{
+  "isSuccess": true,
+  "message": "요청에 성공하였습니다.",
+  "code": 1000,
+  "results": {
+    "name": "예산 계촌",
+    "coord": "EPSG:5186",
+    "pointCloudURL": [
+      "http://kict-pms.kr:37800/E:/Potree3DWebViewer/chungnam/yesan-gyechon/pointclouds/metadata.json"
+    ],
+    "panoramaURL": null,
+    "shapesURL": {
+      "name": "예산 계촌",
+      "coord": "EPSG:5186",
+      "isMultiShp": true,
+      "shpArray": [
+        {
+          "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/chungnam/gyechon/임야선/계촌1지구_지구계도면_토지-임야선_폴리곤.shp",
+          "name": "목포대산임야선",
+          "objectURL": {
+            "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/chungnam/gyechon/임야선/계촌1지구_지구계도면_토지-임야선_폴리곤.dbf"
+          },
+          "visible": true
+        }
+      ]
+    }
+  }
+}

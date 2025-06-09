@@ -1,0 +1,35 @@
+{
+  "isSuccess": true,
+  "message": "요청에 성공하였습니다.",
+  "code": 1000,
+  "results": {
+    "name": "고흥 백일",
+    "coord": "EPSG:32652",
+    "pointCloudURL": [
+      "http://kict-pms.kr:37800/F:/Potree3DWebViewer/goheung/Goheung-Gwayeok-baeg-il/pointclouds/Goheung-Gwayeok-baeg-il/metadata.json"
+    ],
+    "panoramaURL": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/goheung/panorama/고흥coord추가ver/백일_1지구/Baakilri_Panorama",
+    "shapesURL": {
+      "name": "고흥 백일",
+      "isMultiShp": true,
+      "shpArray": [
+        {
+          "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/goheung/baeg-il/경계조정선/3D_과역백일_TM_경계조정선_폴리곤.shp",
+          "name": "백일경계조정선",
+          "objectURL": {
+            "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/goheung/baeg-il/경계조정선/3D_과역백일_TM_경계조정선_폴리곤.dbf"
+          },
+          "visible": true
+        },
+        {
+          "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/goheung/baeg-il/임야선/과역백일_TM_3D.shp",
+          "name": "백일토지임야선",
+          "objectURL": {
+            "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/goheung/baeg-il/임야선/과역백일_TM_3D.dbf"
+          },
+          "visible": false
+        }
+      ]
+    }
+  }
+}

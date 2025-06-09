@@ -1,0 +1,35 @@
+{
+  "isSuccess": true,
+  "message": "요청에 성공하였습니다.",
+  "code": 1000,
+  "results": {
+    "name": "고흥 사덕",
+    "coord": "EPSG:32652",
+    "pointCloudURL": [
+      "http://kict-pms.kr:37800/E:/Potree3DWebViewer/goheung/goheung-dohwa-sadeog/pointclouds/LX_goheung-sadeog/metadata.json"
+    ],
+    "panoramaURL": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/goheung/panorama/고흥coord추가ver/사덕_1지구/Saduck_Panorama",
+    "shapesURL": {
+      "name": "고흥 사덕",
+      "isMultiShp": true,
+      "shpArray": [
+        {
+          "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/goheung/sadeog/경계조정선/3D_도화사덕_TM_경계조정선_폴리곤.shp",
+          "name": "사덕경계조정선",
+          "objectURL": {
+            "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/goheung/sadeog/경계조정선/3D_도화사덕_TM_경계조정선_폴리곤.dbf"
+          },
+          "visible": true
+        },
+        {
+          "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/goheung/sadeog/임야선/도화사덕1지구TM_3D.shp",
+          "name": "사덕토지임야선",
+          "objectURL": {
+            "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/goheung/sadeog/임야선/도화사덕1지구TM_3D.dbf"
+          },
+          "visible": false
+        }
+      ]
+    }
+  }
+}

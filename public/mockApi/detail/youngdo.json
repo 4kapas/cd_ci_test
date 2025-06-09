@@ -1,0 +1,27 @@
+{
+  "isSuccess": true,
+  "message": "요청에 성공하였습니다.",
+  "code": 1000,
+  "results": {
+    "name": "부산 영도",
+    "coord": "EPSG:5187",
+    "pointCloudURL": [
+      "http://kict-pms.kr:37800/E:/Potree3DWebViewer/busan/youngdo/pointclouds/youngdo/metadata.json"
+    ],
+    "panoramaURL": null,
+    "shapesURL": {
+      "name": "부산영도",
+      "isMultiShp": true,
+      "shpArray": [
+        {
+          "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/busan/youngdo/임야선/부산_영도구_토지-임야선_폴리곤.shp",
+          "name": "부산영도임야선",
+          "objectURL": {
+            "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/busan/youngdo/임야선/부산_영도구_토지-임야선_폴리곤.dbf"
+          },
+          "visible": false
+        }
+      ]
+    }
+  }
+}

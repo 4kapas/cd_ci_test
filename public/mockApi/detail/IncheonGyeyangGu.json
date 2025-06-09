@@ -1,0 +1,35 @@
+{
+  "isSuccess": true,
+  "message": "요청에 성공하였습니다.",
+  "code": 1000,
+  "results": {
+    "coord": "EPSG:5186",
+    "pointCloudURL": [
+      "http://kict-pms.kr:37800/E:/Potree3DWebViewer/inchon/gyeyanggu/pointclouds/metadata.json"
+    ],
+    "panoramaURL": null,
+
+    "shapesURL": {
+      "name": "인천계양구",
+      "isMultiShp": true,
+      "shpArray": [
+        {
+          "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/inchon/경계조정선/귤현1지구_지적도_DEM.shp",
+          "name": "인천계양경계조정선",
+          "objectURL": {
+            "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/inchon/경계조정선/귤현1지구_지적도_DEM.dbf"
+          },
+          "visible": false
+        },
+        {
+          "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/inchon/임야선/귤현1지구_지적도_토지-임야선_폴리곤.shp",
+          "name": "인천계양임야선",
+          "objectURL": {
+            "url": "http://kict-pms.kr:37800/E:/Potree3DWebViewer/shapes/inchon/임야선/귤현1지구_지적도_토지-임야선_폴리곤.dbf"
+          },
+          "visible": true
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@/*": ["src/*"], // `src` 디렉토리에서 모든 파일을 찾도록 설정
+      "@/styles/*": ["src/styles/*"], // 예시: 스타일 관련 경로
+      "@/services/*": ["src/services/*"] // 예시: 서비스 관련 경로
+    }
+  },
+  "include": ["src", "src/types"],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
