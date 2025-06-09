@@ -8,5 +8,12 @@ npm run gbuild
 echo Building...
 npm run build
 
-echo ✅ Build complete. You can now check the 'dist' folder.
-pause
+echo Starting dev server...
+start cmd /k "npm run dev"
+
+timeout /t 3 > nul
+
+echo Opening browser to http://localhost:5173 ...
+start "" http://localhost:5173/
+
+echo ✅ Dev server running. Browser should be open.
