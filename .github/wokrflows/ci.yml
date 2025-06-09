@@ -1,28 +1,24 @@
-name: Build FE Locally
+name: CI-CD
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  deploy:
+    runs-on: windows-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: 18
 
       - name: Install dependencies
         run: npm install
 
-      - name: Run gbuild
-        run: npm run gbuild
-
-      - name: Run build
-        run: npm run build
+      - name: Run deploy.bat
+        run: .\deploy.bat
