@@ -32,7 +32,7 @@ start cmd /k "npm run dev"
 timeout /t 3 > nul
 
 echo Opening browser to http://localhost:5173 ...
-start "" http://localhost:5173/
+start "" http://localhost:5173/service/#/dataset
 
 echo ✅ Dev server running. Browser should be open.
 echo [DONE] %date% %time% >> %LOGFILE%
