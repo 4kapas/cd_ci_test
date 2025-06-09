@@ -6,19 +6,11 @@ on:
 
 jobs:
   deploy:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run deploy.bat
-        run: .\deploy.bat
+      - name: Trigger deploy.bat on my local PC
+        run: curl -X POST http://localhost:3000/deploy
