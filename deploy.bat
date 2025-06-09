@@ -6,15 +6,24 @@ echo [START] %date% %time% > %LOGFILE%
 
 echo Installing dependencies...
 echo >> %LOGFILE% Installing dependencies...
-npm install >> %LOGFILE% 2>&1 || goto :error
+call npm install >> %LOGFILE% 2>&1 || goto :error
+
+echo [PASS] npm install
+echo >> %LOGFILE% [PASS] npm install
 
 echo Running gbuild...
 echo >> %LOGFILE% Running gbuild...
-npm run gbuild >> %LOGFILE% 2>&1 || goto :error
+call npm run gbuild >> %LOGFILE% 2>&1 || goto :error
+
+echo [PASS] gbuild
+echo >> %LOGFILE% [PASS] gbuild
 
 echo Building...
 echo >> %LOGFILE% Building...
-npm run build >> %LOGFILE% 2>&1 || goto :error
+call npm run build >> %LOGFILE% 2>&1 || goto :error
+
+echo [PASS] build
+echo >> %LOGFILE% [PASS] build
 
 echo Starting dev server in new window...
 echo >> %LOGFILE% Starting dev server...
